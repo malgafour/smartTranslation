@@ -1,25 +1,4 @@
-/* Template Name: Zivaco - Creative HTML 5 Template
-   Author: Shreethemes
-   Email: support@shreethemes.in
-   Website: https://shreethemes.in
-   Version: 1.0.0
-   Created: January 2022
-   File Description: Main JS file of the template
-*/
-
-
-/*********************************/
-/*         INDEX                 */
-/*================================
- *     01.  Loader               *
- *     02.  Menus                *
- *     03.  Toggle Menu          *
- *     04.  Back to top          *
- *     05.  Feather icon         *
- *     06.  ToolTip              *
- ================================*/
-
-
+ 
  window.addEventListener('load',   fn , false )
 
  //  window.onload = function loader() {
@@ -32,30 +11,8 @@
          }, 350);
      }
  }
- //Menu
- function windowScroll() {
-   const navbar = document.getElementById("navbar");
-   if (
-     document.body.scrollTop >= 50 ||
-     document.documentElement.scrollTop >= 50
-   ) {
-     navbar.classList.add("nav-sticky");
-   } else {
-     navbar.classList.remove("nav-sticky");
-   }
- }
- window.addEventListener("scroll", (ev) => {
-   ev.preventDefault();
-   windowScroll();
- });
+  
 
- // Navbar Active Class
-var spy = new Gumshoe('#navbar-navlist a', {
-  // Active classes
-  // navClass: 'active', // applied to the nav list item
-  // contentClass: 'active', // applied to the content
-  offset: 80
-});
 
    // Toggle menu
  function toggleMenu() {
@@ -88,9 +45,6 @@ var spy = new Gumshoe('#navbar-navlist a', {
      document.body.scrollTop = 0;
      document.documentElement.scrollTop = 0;
  }
- 
- //Feather icon
- feather.replace();
  
  //Tooltip
  var tooltipTriggerList = [].slice.call(document.querySelectorAll('[data-bs-toggle="tooltip"]'))

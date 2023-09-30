@@ -1,25 +1,3 @@
-/* Template Name: Zivaco - Bootstrap 5 Landing Page Template
-   Author: Shreethemes
-   Email: support@shreethemes.in
-   Website: https://shreethemes.in
-   Version: 1.0.0
-   Created: Feb 2022
-   File Description: Common JS file of the template(plugins.init.js)
-*/
-
-
-/***********************************/
-/*         INDEX                   */
-/*==================================
- *     01.  Tobii lightbox         * (For Portfolio pages)
- *     02.  Data Counter           *
- *     03.  Typed Text animation   *
- *     04.  Back Button            *
- ==================================*/
-
-//=========================================//
-/*/*            01) Tobii lightbox         */
-//=========================================//
 
 try {
     const tobii = new Tobii()

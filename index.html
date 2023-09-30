@@ -47,11 +47,11 @@
 
 <body>
 
-    <a href="https://wa.me/+96550152990" class="whatsbut" target="_blank">
+    <a href="https://wa.me/+96550152990?text=hello from website" class="whatsbut" target="_blank">
         <i class="fa fa-whatsapp my-whatsbut"></i>
     </a>
     <!-- START NAVBAR -->
-    <nav id="navbar" class="navbar navbar-expand-lg nav-light fixed-top sticky">
+    <nav id="navbar" class="navbar navbar-expand-lg nav-light">
         <div class="container">
             <a class="navbar-brand" style="width: 25%;" href="#">
                 <span class="logo-light-mode">
@@ -68,22 +68,33 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav ms-auto mb-2 mb-lg-0" id="navbar-navlist">
                     <li class="nav-item">
-                        <a class="nav-link" href="#home">Home</a>
+                        <a class="nav-link" href="#home" id="homeLink"></a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#service">Services</a>
-                    </li>
-
-                    <li class="nav-item">
-                        <a class="nav-link" href="#contact">Contact Us</a>
+                        <a class="nav-link" href="#service" id="serviceLink"></a>
                     </li>
 
                     <li class="nav-item">
-
-                        <strong style="color:#0000FF!important;"><i class="fa fa-phone"></i>+96</strong>
-                        <strong style="color:#FF0000!important;">550152990</strong>
+                        <a class="nav-link" href="#contact" id="contactLink"></a>
                     </li>
 
+                    <li class="nav-item">
+                        <a class="nav-link" href="tel:0550152990">
+                            <strong style="color:#0000FF!important;"><i class="fa fa-phone"></i></strong>
+                            <strong style="color:#FF0000!important;">50152990</strong>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn" onclick="changeLanguage(1)">
+                            <i class="fa fa-language"></i>EN
+                        </button>
+                    </li>
+                    <li class="nav-item">
+                        <button class="nav-link btn" onclick="changeLanguage(2)">
+                            <strong><i class="fa fa-language"></i></strong>
+                            <strong>العربية</strong>
+                        </button>
+                    </li>
                 </ul>
             </div>
             <!--end collapse-->
@@ -121,11 +132,10 @@
             <div class="row justify-content-center">
                 <div class="col-12 mb-4 pb-2">
                     <div class="section-title text-center">
-                        <h4 class="title mb-4" style="color:#143753!important;">Get Better Translation Service</h4>
-                        <p class="text-muted para-desc mx-auto mb-0" style="color:#001C30!important;">
-                            Smart is one of the fastest growing and leading providers of translation services in a
-                            professional and accurate way. We feel proud for the quality of our work and the feedbacks
-                            we receive from our clients.
+                        <h4 class="title mb-4" style="color:#143753!important;" id="serviceTitle">Get Better Translation
+                        </h4>
+                        <p class="text-muted para-desc mx-auto mb-0" style="color:#001C30!important;"
+                            id="serviceDescription">
                         </p>
                     </div>
                 </div>
@@ -142,7 +152,7 @@
                         </div>
 
                         <div class="content mt-4 pt-2">
-                            <a class="title text-dark h5">LEGAL TRANSLATION</a>
+                            <a class="title text-dark h5" id="service1"></a>
                             <!-- <p class="text-muted mt-3">The phrasal sequence of the is now so that many campaign and benefit</p>    -->
 
 
@@ -159,7 +169,7 @@
                         </div>
 
                         <div class="content mt-4 pt-2">
-                            <a class="title text-dark h5">MEDICAL TRANSLATIONS</a>
+                            <a class="title text-dark h5" id="service2"></a>
 
 
 
@@ -176,7 +186,7 @@
                         </div>
 
                         <div class="content mt-4 pt-2">
-                            <a class="title text-dark h5">EDUCATIONAL TRANSLATION</a>
+                            <a class="title text-dark h5" id="service3"></a>
 
 
                         </div>
@@ -192,7 +202,7 @@
                         </div>
 
                         <div class="content mt-4 pt-2">
-                            <a class="title text-dark h5">PRESS TRANSLATION</a>
+                            <a class="title text-dark h5" id="service4"></a>
 
 
                         </div>
@@ -209,7 +219,7 @@
                         </div>
 
                         <div class="content mt-4 pt-2">
-                            <a class="title text-dark h5">MARKETING TRANSLATION</a>
+                            <a class="title text-dark h5" id="service5"></a>
 
 
                         </div>
@@ -226,7 +236,7 @@
                         </div>
 
                         <div class="content mt-4 pt-2">
-                            <a class="title text-dark h5">FINANCIAL TRANSLATION</a>
+                            <a class="title text-dark h5" id="service6"></a>
 
 
                         </div>
@@ -242,7 +252,7 @@
                         </div>
 
                         <div class="content mt-4 pt-2">
-                            <a class="title text-dark h5">SPECIALIZED TRANSLATION</a>
+                            <a class="title text-dark h5" id="service7"></a>
 
 
                         </div>
@@ -258,7 +268,7 @@
                         </div>
 
                         <div class="content mt-4 pt-2">
-                            <a class="title text-dark h5">OTHER TRANSLATIONS</a>
+                            <a class="title text-dark h5" id="service8"></a>
 
 
                         </div>
@@ -282,10 +292,8 @@
             <div class="row justify-content-center">
                 <div class="col-12 mb-4 pb-2">
                     <div class="section-title text-center">
-                        <h4 class="title mb-4">Get In Touch!</h4>
-                        <p class="text-muted para-desc mx-auto mb-0">We are happy to receive your inquiry and earn your
-                            trust by providing you the best service in translation industry. Get touch with us for a
-                            quote:</p>
+                        <h4 class="title mb-4" id="contactTitle"></h4>
+                        <p class="text-muted para-desc mx-auto mb-0" id="contactDescription"></p>
                     </div>
                 </div>
                 <!--end col-->
@@ -336,8 +344,8 @@
 
                         <div class="row justify-content-end">
                             <div class="col-12 text-end">
-                                <button type="submit" id="submit" name="send" class="btn btn-primary">Send
-                                    Message</button>
+                                <button type="button" id="submit" onclick="openMail()" name="send"
+                                    class="btn btn-primary"></button>
                             </div>
                             <!--end col-->
                         </div>
@@ -352,7 +360,6 @@
     </section>
     <!--end section-->
     <!-- End -->
-
     <!-- Start Footer -->
     <footer class="bg-footer footer-bar">
         <div class="footer-py-30">
@@ -379,10 +386,12 @@
                     <div class="col-sm-3 mt-4 mt-sm-0 pt-2 pt-sm-0">
                         <ul class="list-unstyled social-icon foot-social-icon text-sm-end mb-0">
 
-                            <li class="list-inline-item mb-0"><a href="#"><i data-feather="instagram"
+                            <li class="list-inline-item mb-0"><a target="_blank"
+                                    href="https://www.instagram.com/smart.translation.kw/"><i data-feather="instagram"
                                         class="fa icon-sm fa-instagram"></i></a></li>
-                            <li class="list-inline-item mb-0"><a href="#"><i data-feather="twitter"
-                                        class="fa icon-sm fa-twitter"></i></a></li>
+                            <li class="list-inline-item mb-0"><a target="_blank"
+                                    href="https://www.facebook.com/profile.php?id=100047701149883&mibextid=9R9pXO"><i
+                                        data-feather="facebook" class="fa icon-sm fa-facebook"></i></a></li>
 
                         </ul>
                         <!--end icon-->
@@ -401,14 +410,134 @@
 
     <!-- JAVASCRIPTS -->
     <script src="js/bootstrap.bundle.min.js"></script>
-    <script src="js/gumshoe.js"></script>
-    <script src="js/contact.js"></script>
-    <script src="js/feather.min.js"></script>
     <!-- Custom -->
     <script src="js/plugins.init.js"></script>
     <script src="js/app.js"></script>
+    <script>
+        var home = document.getElementById("homeLink");
+        var service = document.getElementById("serviceLink");
+        var contact = document.getElementById("contactLink");
+        var serviceTitle = document.getElementById("serviceTitle");
+        var serviceDescription = document.getElementById("serviceDescription");
+        var service1 = document.getElementById("service1");
+        var service2 = document.getElementById("service2");
+        var service3 = document.getElementById("service3");
+        var service4 = document.getElementById("service4");
+        var service5 = document.getElementById("service5");
+        var service6 = document.getElementById("service6");
+        var service7 = document.getElementById("service7");
+        var service8 = document.getElementById("service8");
+        var contactTitle = document.getElementById("contactTitle");
+        var contactDetails = document.getElementById("contactDescription");
+        var submitButton = document.getElementById("submit");
 
 
+        checkCookie();
+
+        function getCookie(cname) {
+            let name = cname + "=";
+            let decodedCookie = decodeURIComponent(document.cookie);
+            let ca = decodedCookie.split(';');
+            for (let i = 0; i < ca.length; i++) {
+                let c = ca[i];
+                while (c.charAt(0) == ' ') {
+                    c = c.substring(1);
+                }
+                if (c.indexOf(name) == 0) {
+                    return c.substring(name.length, c.length);
+                }
+            }
+            return "";
+        }
+
+        function checkCookie() {
+            let language = getCookie("lang");
+            if (language != "") {
+                if (language == 2) {
+                    changeToAR()
+                } else {
+                    changeToEN()
+                }
+            } else {
+                language = 2;
+                changeToAR();
+                setCookie("lang", language, 30);
+            }
+        }
+
+        function setCookie(cname, cvalue, exdays) {
+            const d = new Date();
+            d.setTime(d.getTime() + (exdays * 24 * 60 * 60 * 1000));
+            let expires = "expires=" + d.toUTCString();
+            document.cookie = cname + "=" + cvalue + ";" + expires + ";path=/";
+        }
+
+        function changeLanguage(e) {
+
+            if (e == 1) {
+                changeToEN()
+            } else {
+                changeToAR()
+            }
+            setCookie("lang", e, 30);
+        }
+
+        function changeToAR() {
+            home.innerHTML = "الرئيسية";
+            service.innerHTML = "الخدمات";
+            contact.innerHTML = "تواصل معنا";
+            serviceTitle.innerHTML = "احصل على أفضل خدمة للترجمة";
+            serviceDescription.innerHTML =
+                "نحن نفخر في شركة سمارت للترجمة بخبرتنا الواسعة وفريق العمل المؤهل بتقديم خدمات الترجمة في العديد من التخصصات والمجالات منها الترجمة القانونية وترجمة التقارير الطبية وترجمة الاتفاقيات والعقود والشهادات والمستندات الحكومية بكافة أنواعها بالعديد من اللغات من وإلى  العربية والإنجليزية والفرنسية والتركية والألمانية والايطالية والروسية وغيرهم من اللغات الأخرى"
+            service1.innerHTML = "الترجمة القانونية";
+            service2.innerHTML = "الترجمة الطبية";
+            service3.innerHTML = "الترجمة التعليمية";
+            service4.innerHTML = "الترجمة الصحفية";
+            service5.innerHTML = "الترجمة التسويقية";
+            service6.innerHTML = "الترجمة المالية";
+            service7.innerHTML = "الترجمة المتخصصة";
+            service8.innerHTML = "ترجمات أخرى";
+            contactTitle.innerHTML = "! ابقى على تواصل";
+            contactDetails.innerHTML =
+                "يسعدنا تلقي استفسارك وكسب ثقتك من خلال تقديم أفضل خدمة لك في مجال الترجمة. تواصل معنا للحصول على عرض أسعار:";
+            submitButton.innerHTML = "ارسال";
+        }
+
+        function changeToEN() {
+            home.innerHTML = "Home";
+            service.innerHTML = "Service";
+            contact.innerHTML = "Contact us";
+            serviceTitle.innerHTML = "Get Better Translation Service";
+            serviceDescription.innerHTML =
+                "We take pride in Smart Translation Company for our extensive expertise and highly qualified team, offering translation services in a multitude of specializations and fields. This includes legal translation, medical report translation, as well as the translation of agreements, contracts, certificates, and government documents in various languages, spanning Arabic, English, French, Turkish, German, Italian, Russian, and many more.";
+            service1.innerHTML = "LEGAL TRANSLATION";
+            service2.innerHTML = "MEDICAL TRANSLATIONS";
+            service3.innerHTML = "EDUCATIONAL TRANSLATION";
+            service4.innerHTML = "PRESS TRANSLATION";
+            service5.innerHTML = "MARKETING TRANSLATION";
+            service6.innerHTML = "FINANCIAL TRANSLATION";
+            service7.innerHTML = "SPECIALIZED TRANSLATION";
+            service8.innerHTML = "OTHER TRANSLATIONS";
+            contactTitle.innerHTML = "Get In Touch!";
+            contactDetails.innerHTML =
+                "We are happy to receive your inquiry and earn yourtrust by providing you the best service in translation industry. Get touch with us for aquote:";
+            submitButton.innerHTML = "Send Message";
+        }
+
+        function openMail() {
+            var name = document.getElementById("name");
+            var from = document.getElementById("email");
+            var subject = document.getElementById("subject");
+            var body = document.getElementById("comments");
+            var dd = body = emailBody(body.value, name.value, from.value)
+            window.open('mailto:info@smart-translation.net?subject=' + subject.value + '&body=' + dd);
+        }
+
+        function emailBody(e, name, email) {
+            e += `%0A %0A best regards,%0A${name},%0A${email}`;
+            return e;
+        }
+    </script>
 </body>
 
 </html>
